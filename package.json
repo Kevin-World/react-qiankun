@@ -84,5 +84,11 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "airbnb": "^0.0.2",
+    "less": "^4.1.2",
+    "less-loader": "^10.2.0",
+    "prettier": "^2.6.0"
   }
 }

@@ -1,17 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { registerMicroApps, start } from 'qiankun';
+import { BrowserRouter as Rourer } from 'react-router-dom';
+
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import microApps from './config/microApps';
+import './index.css';
+
+// 注册微应用
+registerMicroApps(microApps);
+// 启动 qiankun
+start();
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Rourer>
+      <App />
+    </Rourer>
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
