@@ -1,0 +1,349 @@
+//布局方式
+*, :after, :before {
+    box-sizing: border-box;
+}
+.row{
+  display: flex
+  width:100%
+}
+.col{
+  flex: 1
+  width:100%
+}
+.col-5 {
+  flex: 0 0 5%;
+  max-width: 5%;
+}
+.col-10 {
+  flex: 0 0 10%;
+  max-width: 10%;
+}
+.col-15 {
+  flex: 0 0 15%;
+  max-width: 15%;
+}
+.col-20{
+  flex: 0 0 20%;
+  max-width: 20%; 
+}
+.col-25{
+  flex: 0 0 25%;
+  max-width: 25%; 
+}
+.col-30 {
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+.col-33 {
+  flex: 0 0 33%;
+  max-width: 33%;
+}
+.col-40 {
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+.col-45 {
+  flex: 0 0 45%;
+  max-width: 45%;
+}
+.col-50 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.col-55 {
+  flex: 0 0 55%;
+  max-width: 55%;
+}
+.col-52 {
+  flex: 0 0 52%;
+  max-width: 52%;
+}
+
+.col-57 {
+  flex: 0 0 57%;
+  max-width: 57%;
+}
+
+.col-65 {
+  flex: 0 0 65%;
+  max-width: 65%;
+}
+
+.col-70 {
+  flex: 0 0 70%;
+  max-width: 70%;
+}
+.col-75{
+  flex: 0 0 75%;
+  max-width: 75%; 
+}
+.col-85 {
+  flex: 0 0 85%;
+  max-width: 85%;
+}
+.col-90 {
+  flex: 0 0 90%;
+  max-width: 90%;
+}
+//对齐方式
+.text-align-right {
+  text-align: right;
+}
+
+.text-align-center {
+  text-align: center;
+}
+.text-align-left {
+  text-align: left;
+}
+//垂直居中
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+//水平居中
+.justify-content-center {
+  justify-content: center;
+}
+
+//select
+.transparent-select {
+  border: none;
+  background: transparent;
+}
+//width
+.width-100
+  width 100%
+//省略号
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+//字体颜色
+.gray-color
+  color:$fDescrColor
+.color-333
+  color: #333
+.color-666
+  color: #666
+.color-999 
+  color: #999
+.color-444
+  color:#444
+//审批颜色,时间轴
+//审批颜色
+.agree-color
+  color: #1469B5
+
+.reject-color 
+  color: #D46670 
+
+.turn-color 
+  color: #1F9F76 
+
+.sign-color 
+  color: #1468B4 
+
+.agree-bg-color
+  background: #1469B5 
+
+.reject-bg-color 
+  background: #D46670
+
+.turn-bg-color 
+  background: #1F9F76 
+
+.sign-bg-color 
+  background: #1468B4 
+.white-color
+  background: #fff
+.color-bbb
+  background:#bbb
+//填单行样式
+ // border-bottom: 1px solid #ededed
+.au-item-style
+  position: relative
+  box-sizing: border-box
+  margin:0
+  background-color: #ffffff
+  color: $fMajorColor
+  display: flex
+  align-items: center
+  padding: 15px 0px;
+  font-size:$defaultLineFont
+  word-break:break-all;
+  padding-right: 6px;
+.prompt-field
+  display: inline-block
+  width:100px
+//字段只读样式
+.readonlyClass
+  color:$fgrayReadOnlyColor !important
+  background-color: #fff;
+.padding-l-15
+  padding:15px
+.paddinig-lr-15
+  padding-left: 15px
+  padding-right:15px
+.padding-top-5
+
+.required-ver
+  display: inline-block;
+  width:15px;
+  color:#F44336
+  text-align: center
+
+
+.border-none
+  border: none;
+//padding
+.padding-t-25
+  padding-top:25px
+.padding-10
+  padding: 10px
+.padding-ltr-10
+  padding:10px 10px 0 10px
+.padding-lr-14
+  padding: 0 14px
+.padding-tb-5
+  padding: 5px 0;
+ //height
+.height-40
+  height: 40px
+.height-p-100
+  height: 100%
+ 
+//margin 10
+.margin-top-line
+  margin-top:5px
+.margin-bottom-line
+  margin-bottom:5px
+.margin-top-10
+  margin-top:10px
+.margin-bottom-10
+  margin-bottom:10px
+.margin-left10
+  margin-left:10%
+.common-margin-size
+  margin:10px 
+.margin-card-space
+  margin:5px 15px
+//height
+.height-20
+  height:20px
+
+//border
+.border-bottom-1px
+  border-bottom:solid 1px #ededed
+.border-top-1px
+  border-top:solid 1px #ededed
+
+a, ul, li,th,tr,img,p,frame {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: 400;
+    vertical-align: baseline;
+} 
+//圆角
+.common-border-radius
+  border-radius $border-radius
+//单据页面背景色
+.background-bills
+  background $pageBackgroundColor
+.approve-container
+  position: relative
+  top: 0
+  left: 0
+  background: #fff
+  .approve-header
+    border-bottom: 1px solid #ededed;
+    color: $fMajorColor ;
+    height: 40px;
+    padding: 0 14px;
+    font-size: $titleFont;
+    font-weight: 400;
+  .approve-content
+    height: 40px;
+//font
+
+.font-12
+  font-size 12px
+.font-14
+  font-size: 14px
+.font-16
+  font-size:16px
+.font-32
+  font-size:32px  
+.font-svg-title
+  font-size:20px
+.font-title
+  font-size:$titleFont 
+.font-common //
+  font-size:  $commonFont
+.font-card-important
+  font-size: $cardImportantFont
+.color-gray
+  color:#a6a6a6
+.color-7d88aa  
+  color: #7d88aa;
+.color-1469
+  color: #1469B5
+//视图底部
+
+.bar-footer {
+    height: 50px;
+}
+//列表新增图标
+.icon-position
+    bottom: 60px;
+    position: absolute;
+    z-index: 1;
+    font-size:65px !important
+    color:$list-add-color
+    transform:translate3d(-50%,0,0)
+    left 50%
+.highlightColor
+  color: #f77462;
+//iconfont-style
+.icon-style
+  font-size: 12px;
+  color: #9e9e9e;;
+
+//苹方斜体
+// .font-pingfang-bold
+//   font-family: PingFangSC-Bold
+
+//position
+.position-relative
+  position relative
+
+//弹出框共有样式
+.public-css
+  background-color $bBackgroundColor
+  font-family pingFangSC-Regular//苹方简体常规
+  color $fMajorColor
+  background $bBackgroundColor
+  font-size $titleFont
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+
+  //无附件描述样式
+.none-desc
+  text-align: center;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px 0;
+  border-top 1px dashed #eeeeee
+textarea:disabled,textarea[disabled]
+  color $fgrayReadOnlyColor
+  opacity 1
+  font-weight: 400
+  -webkit-text-fill-color: $fgrayReadOnlyColor!important
+input:disabled,input[disabled]
+  color $fgrayReadOnlyColor
+  opacity 1
+  font-weight: 400
+  -webkit-text-fill-color: $fgrayReadOnlyColor!important

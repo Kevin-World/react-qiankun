@@ -1,0 +1,20 @@
+@import 'mixins.styl'
+@import '_variable.styl'
+//按钮规范
+.more-button  // 用于底部导航栏中-更多选择
+  border 1px solid #dce3e1
+  button-mixin(36px,52px,$border-radius)
+.delete-button //用于底部导航栏中-删除/拒绝
+  color #d46670
+  border 1px solid #d46670
+  button-mixin(36px,177px,$border-radius)
+.minor-button //用于底部导航栏次要按钮
+  color $bColorDarkBackground
+  border 1px solid $bColorDarkBackground
+  button-mixin(36px,177px,$border-radius)
+.save-button //用于底部导航栏主要按钮
+  color #ffffff
+  background-color $bColorDarkBackground
+  button-mixin(36px,177px,$border-radius)
+
+
