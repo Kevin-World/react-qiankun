@@ -10,11 +10,15 @@ const MenuList: MenuProps[] = [
   },
   {
     title: 'React App',
-    path: '/react-micro-app/demo',
+    path: '/micro-app/react/demo',
   },
   {
     title: 'Vue App',
-    path: '/vue-micro-app/demo',
+    path: '/micro-app/vue/demo',
+  },
+  {
+    title: 'Manual Load App',
+    path: '/manual-load',
   },
 ];
 

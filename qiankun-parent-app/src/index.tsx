@@ -4,7 +4,7 @@ import { registerMicroApps, start } from 'qiankun';
 import { BrowserRouter as Rourer } from 'react-router-dom';
 
 import App from './App';
-import microApps from './config/microApps';
+import microApps from './config/microAppsConfig';
 import './index.css';
 
 // 注册微应用
