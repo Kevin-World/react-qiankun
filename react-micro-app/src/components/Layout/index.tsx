@@ -9,17 +9,14 @@ const Layout: any = (): any => {
   return (
     <>
       <div className='qiankun-layout-title'>
-        <p>Qiankun Web App Example</p>
+        <p>React Micro App</p>
       </div>
       <div className='qiankun-layout-head'>
-        {menus.map(m => {
-          const match = pathname === m.path;
-          return (
-            <div className='qiankun-layout-head-menu-item' key={m.path}>
-              <Link to={m.path} style={{ color: match ? "#1E90FF" : "#000" }}>{m.title}</Link>
-            </div>
-          );
-        })}
+        {menus.map(m => (
+          <div className='qiankun-layout-head-menu-item' key={m.path}>
+            <Link to={m.path}>{m.title}</Link>
+          </div>
+        ))}
       </div>
       <div
         className='qiankun-layout-content'

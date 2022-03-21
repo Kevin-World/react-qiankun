@@ -58,6 +58,12 @@
     "webpack-manifest-plugin": "^4.0.2",
     "workbox-webpack-plugin": "^6.4.1"
   },
+  "devDependencies": {
+    "airbnb": "^0.0.2",
+    "less": "^4.1.2",
+    "less-loader": "^10.2.0",
+    "prettier": "^2.6.0"
+  },
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
@@ -84,11 +90,5 @@
     "presets": [
       "react-app"
     ]
-  },
-  "devDependencies": {
-    "airbnb": "^0.0.2",
-    "less": "^4.1.2",
-    "less-loader": "^10.2.0",
-    "prettier": "^2.6.0"
   }
 }

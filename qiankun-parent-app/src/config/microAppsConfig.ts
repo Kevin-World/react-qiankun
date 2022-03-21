@@ -6,8 +6,8 @@ const microAppConfig = [
     activeRule: '/micro-app/vue/demo',
   },
   {
-    name: 'reactApp',
-    entry: 'http://localhost:3002',
+    name: 'react-qiankun',
+    entry: 'http://localhost:8200',
     container: '#react_micro-app',
     activeRule: '/micro-app/react/demo',
   },
