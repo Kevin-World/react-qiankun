@@ -22,8 +22,12 @@ export async function bootstrap() {
   console.log("[vue] vue app bootstraped");
 }
 export async function mount(props) {
-  console.log("[vue] props from main framework", props);
+  console.log("[vue] props from main framework -> mount", props);
   render(props);
+}
+// 增加 update 钩子以便主应用手动更新微应用
+export async function update(props) {
+  console.log("[vue] props from main framework -> update", props);
 }
 export async function unmount() {
   instance.$destroy();

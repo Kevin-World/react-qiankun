@@ -22,6 +22,7 @@ const ManualLoadMicroApp = () => {
   return (
     <>
       <h2>通过 “loadMicroApp” 手动加载的Vue微应用</h2>
+      <div><button onClick={() => { microApp?.update({ num: 12722 }) }}>Update</button></div>
       <div ref={containerRef}></div>
     </>
   )
